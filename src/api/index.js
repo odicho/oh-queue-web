@@ -1,5 +1,5 @@
 import axios from "axios";
-const url = "http://localhost:5000/queues";
+const url = "https://oh-queue-api.herokuapp.com/queues";
 export const readQueues = () => axios.get(url);
 export const createQueue = (newQueue) => axios.post(url, newQueue);
 export const updateQueue = (id, updatedQueueItem) =>
