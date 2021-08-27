@@ -2,7 +2,7 @@ import React from "react";
 import "./QueueItem.css";
 
 const QueueItem = (props) => {
-  const { firstName, lastName, index } = props;
+  const { firstName, lastName, index, deleteCurrentQueueItem, id } = props;
   return (
     <div className="card">
       <div className="name">
@@ -10,7 +10,7 @@ const QueueItem = (props) => {
           {index}. {firstName} {lastName}
         </p>
       </div>
-      <a href="/#" className="close">
+      <a href="/#" className="close" onClick={() => deleteCurrentQueueItem(id)}>
         X
       </a>
     </div>
