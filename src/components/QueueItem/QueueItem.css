@@ -1,0 +1,49 @@
+.card {
+  -webkit-box-shadow: 0 1px 3px rgba(145, 138, 227, 0.12), 0 1px 2px rgba(145, 138, 227, 0.24);
+          box-shadow: 0 1px 3px rgba(145, 138, 227, 0.12), 0 1px 2px rgba(145, 138, 227, 0.24);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  background: #fcfcfd;
+  width: 500px;
+  height: 50px;
+  border-style: solid;
+  border-color: #918ae3;
+  border-radius: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20px auto 50px;
+      grid-template-columns: 20px auto 50px;
+}
+
+.card p {
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  margin: 0;
+  color: #918ae3;
+  cursor: default;
+}
+
+.card .name {
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.card .close {
+  color: #918ae3;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.card .close:hover {
+  font-weight: bold;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 5px 28px rgba(145, 138, 227, 0.25), 0 5px 5px rgba(145, 138, 227, 0.22);
+          box-shadow: 0 5px 28px rgba(145, 138, 227, 0.25), 0 5px 5px rgba(145, 138, 227, 0.22);
+}
+/*# sourceMappingURL=QueueItem.css.map */
