@@ -50,17 +50,17 @@ const Form = () => {
     }
   };
 
-  // const deleteCurrentQueueItem = async (id) => {
-  //   console.log(id);
-  //   if (id !== null) {
-  //     await deleteQueue(id);
-  //     const queuesCopy = [...queueItems];
-  //     const queuesAfterDelete = queuesCopy.filter(
-  //       (queueItem) => queueItem._id !== id
-  //     );
-  //     setQueueItems(queuesAfterDelete);
-  //   }
-  // };
+  const deleteCurrentQueueItem = async (id) => {
+    console.log(id);
+    if (id !== null) {
+      await deleteQueue(id);
+      const queuesCopy = [...queueItems];
+      const queuesAfterDelete = queuesCopy.filter(
+        (queueItem) => queueItem._id !== id
+      );
+      setQueueItems(queuesAfterDelete);
+    }
+  };
 
   // const clear = () => {
   //   setCurrentId(null);
@@ -106,6 +106,8 @@ const Form = () => {
                   firstName={firstName}
                   lastName={lastName}
                   index={index + 1}
+                  id={_id}
+                  deleteCurrentQueueItem={deleteCurrentQueueItem}
                 />
                 {/* <button onClick={() => setCurrentId(_id)}>Update</button>
                   <button onClick={() => deleteCurrentQueueItem(_id)}>
